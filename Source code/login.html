@@ -1,0 +1,43 @@
+<html>
+            <head>
+            <title>User Login Validation</title>
+            <script language="javascript">
+            function verify(form) 
+            {
+            var x=1;
+            if(document.f1.uid.value=="")
+            {
+            alert("Please Enter User ID ");
+            document.f1.uid.focus();
+            x=0;
+            return(false);
+            }
+            if(document.f1.pwd.value=="")
+            {
+            alert("Please Enter your Password");
+            document.f1.pwd.value="";
+            document.f1.pwd.focus();
+            x=0;
+            return(false);
+            }
+            
+            if(x==1)
+            alert("Login Validated Sucessfully. Go to the Library");
+            }
+            </script>
+            </head>
+            
+            <body background="https://images.squarespace-cdn.com/content/v1/57c226abbe6594ea1c70680b/1649823706101-4TO55TQJAFV2Z1JX4YAY/Untitled+design+%285%29.jpg?format=2500w">
+                          <form name="f1" action ="" method="post" onsubmit="return verify(this.form)">
+                <center><h1>Sign in</h1></center>
+                <font size="3"
+                <pre></pre>
+               <i>  <center>&nbsp;&nbsp;<h3>UserID: <input type="text" id="uid"></h3></center><br></i>
+           <i>  <center>  <h3> Password: <input type="password" id="pwd"></h3><br></i>
+           <i> <center><input type ="submit" value ="Login"></center></i>
+              </font>
+            </form>
+            <center><h3> <a href="dashboards.html">Go to the Library</a></h3></center>
+           <center> <h3>Do not have an account yet?<b></b><a href="registration.html"><b></b>&nbsp  Create now</a></h3></center>
+           </body>
+            </html>

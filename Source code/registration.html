@@ -1,0 +1,122 @@
+<html>
+  <title>registration</title>
+  <head> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+       <center><h1>Sign up</h1></center>
+    
+        <script language="javascript">
+        function verify(form) 
+        {
+        var x=1;
+        if(document.f1.n.value=="")
+        {
+        alert("Please Enter Name");
+        document.f1.n.focus();
+        x=0;
+        return(false);
+        }
+        var x=1;
+        if(document.f1.m.value=="")
+        {
+        alert("Please Enter Email");
+        document.f1.m.focus();
+        x=0;
+        return(false);
+        }
+    
+        if(document.f1.p.value=="")
+        {
+        alert("Please Enter your Password");
+        document.f1.p.value="";
+        document.f1.p.focus();
+        x=0;
+        return(false);
+        }
+        if(document.f1.p.value.length<6)
+        {
+        alert("Password must be greater than 6 character");
+        document.f1.p.value="";
+        document.f1.cp.value="";
+        document.f1.p.focus();
+        x=0;
+        return(false);
+        }
+        if(document.f1.cp.value=="")
+        {
+        alert("Please Enter your Confirm Password");
+        document.f1.cp.focus();
+        x=0;
+        return(false);
+        }
+        if((document.f1.p.length)!=(document.f1.cp.length))
+        {
+        alert("Your Password does not match with Confirm Password");
+        document.f1.p.value="";
+        document.f1.cp.value="";
+        document.f1.p.focus();
+        x=0;
+        return(false);
+        }
+        if((document.f1.p.length)==(document.f1.cp.length))
+        {
+          if((document.f1.p.value)!=(document.f1.cp.value))
+          {
+           alert("Your Password does not match with Confirm Password");
+          document.f1.p.value="";
+          document.f1.cp.value="";
+          document.f1.p.focus();
+          x=0;
+          return(false);
+         }
+        }
+    
+        if(x==1)
+        {
+          alert("Registered Successfully.Go to the Library");
+        }
+        
+  }
+    
+        
+         </script>
+         
+        
+  </head>
+ <body background="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+        <form name="f1" action ="" method="post" onsubmit="return verify(this.form)">
+          <font size="3" <pre>
+            <center><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw0NDQ0QDQ0OEA8NDQ0NDQ8NDg0NFREXFxYRFRUYHSggGSYmGxMVIj0hJTUrLzouFyEzODMtQystOjcBCgoKDg0NFQ8PFy0eFRktKy0tKy0tLTcrKy03Nys3LS0rLS0rLSs3LTcrKys3Kys3KysrNysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQIDBAUHCAb/xAA6EAEAAgECAgUICAUFAAAAAAAAAQIDBBEFEgchMVGBBhMXIkFhkdMUMjNVcYKhpEJSU5PBIzRiotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAEQFBIf/aAAwDAQACEQMRAD8A7cAbYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCQA2TyioQtynKCBPKbAgTymwKidjYQDYAAAAAAAAAAAAAAAQLxAIiFoqtELRAqsQbMmyOaveCnKcq/PXvOeveCnKcq/PXvRN47wV2RstNo70c0d4K7GyeaO9HNAIQndAIEoEAAAAAAAAAAEJIBMQyVhWsMlYFWiGO+X2R8TNf2R4sQEzv29YAgAAAAAAAAhIAAAINwSISAAAAAAAQJqDJVkhjqvf6siteZ36+8AQAAAAHGcf49peH4Z1OszRixxPLX23yX/kpWOu0upuMdOWTmtGh0FK1/hyau9r2t+NKTG3xkpHdg6N4Z05amLR9M0GDJXfrnTXyYbRX8LzaJ/R2r5K+Vej4pinLo8u9q7edwXiK5sMz2c1f8xvHvKRzoAAAAAKzKNyUbgtCykLgAAAAAAJqhNRcZKr37JUqvfskGuAIAAK3vFYm1piK1ibWmeyIjtmVnBeXV7V4VxS1N4tGj1G0x1TH+nO8/DcHnLy98qcnFNbk1FrW8xSbY9JinsxYInqnbvttvM987eyHzgMNjk/Jzjmfh+qxavTWmt8do5q77Vy49/Wx274mP8A3tiHGAPYXCeIY9Vp8Gqwzvjz46Zqb9sRaN9p98dng23xPQ1e1uCaLm3na2orWZ/ljPfb/MeD7ZtgAAABjtKN0ZO1WJUZIZGKjJCCQAAAAAE1QmouMlV79kqVTeeqQYQBAABg1umpmxZcGSN8eal8V476WrNZ/SWcB5D8oOD5dDqs+jzxtkw3mu+20Xp/Dkj3TG0+LjnqHy88hNNxelZvM4NXjrNcOppG8xXt5L1/irv198de09c79KcW6K+Mae8xXSxqqezLpslbxP5Z2tHwZ3Gs18SzaPS5M2THhw0nJly2rjx0r1za9p2iIfVcO6MeM57RX6DbDWZ68movTFWvvmJnmnwiXcXR90bafhcxqct41Oums187ttiwRPbGKJ6957Oaevbs23ndCvpvJbg8aHRaTRRMTODFWl7RG0Wyz13t42m0uVBpkAAABr5p6/BWJRqJ9bwhWstDPSWWGHGzQgkBAAAAATVBArJCbdkqwm09QMYAgACHX3lX0t8P0VrYdPFtfnrvFow2imClo9k5Z33/ACxPZ2vkemPy/vfJk4TosnLix+prctJ9bLk9uCJjsiOye+d47InfqJN1cx2fqum7iVrTOLTaTFT2VtTLkt42543+EMHpq4t/T0f9jL8x1uJVjsj01cW/p6P+xl+YyYemzikTE3waO9fbXzWaszHumMnU6zCkd/8Ak10zaLUWri1uK2hvadoy83ntPvvtG9oiLV8Y275dl48lbVrelovS0RatqzFq2rPZMTHa8auxOiny+vw/NTRarJvw7Nbbe9v9nktP2lZ9lZmeuPfv373NTceiRCVQABo6qfW8IUpJrZ9fwhSkt8Rt42xDXxNiGVSAgAAAAEBALQm3YgkVUAQcP5XcW+haDW6yJiLYcN7Y9+zzs+rT/tarmHxfTFitbgmuikTO04L2iI39SM9JmfDt8AeaL3m0za0za1pm1rWmZm1p7ZmfaqDDYAAAAAD090UcZnWcJ0t725suDm0mWZneZnH1VmffyTSX17rHoAx2jhuotaJit9ZeabxtzbYscTMeMbeDs5vGNAAcXr/tPywjGnX/AGn5YRjb4jcxNiGvibEMqkBAAAAAIAEwIABCQGLVaemXHkw5aRkxZa2x5KWjet6Wjaaz4SygOhPKjoZ1uPJe/DJpqtPM70xXy1xZ8cTP1Zm21bbd+8fg4D0V8c+7/wB3o/mPTSEi15m9FfHPu/8Ad6P5h6K+Ofd/7vR/MemQhXmb0V8c+7/3ej+Yeivjn3f+70fzHpkIV5m9FfHPu/8Ad6P5jlOBdDnE82Sv0yMeiwxPr2nLjz5Zr/wrjmY+Mw9CpIVo8F4Vh0Wnw6TTU5MOGvLSO2Z9s2mfbMzMzM98t4FQBAOL1/2k/hBiY8t+a9reyZ6vw7GbFDfEbWJsQw4oZoZVICAAAAAAAAACASAAAAAAAAAACAS1Nfn5Y5Y+tb9I7zUa2K9VfWt+kfi4/rtO8zvM9stZiJx1bWKrHjq2sdV0ZccMqtYWYUAAAAAAAAAAVmUygEbom0isqE5JVnLPuJhWYAnNb3fBSdTb3fAmFJqoTq7+74KTrcnu+BNFfNr4ifpuT3fA+m5Pd8EebPNngfTMnu+DHfJe31rTMd3ZDJ5taMZ4MFKM1KMlcbNTGUVpRsUqVouyokEAAAAAAAAAABWYWAU2RsyAMXKjlZdjZRhmis42xsbA1/Nnm2xsbA1/Nnm2xsbA1/NLRiZtgGOKLxVYQQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/2Q==" width=200 height="200"></center>
+          
+              <center><input type="file" name="" id="file" accept="image/*"></center>
+         
+                     <center><h3> <i>Enter your Name :  <INPUT TYPE="TEXT" name="n"></i></h3></center> <br>
+        <center><h3><i>Enter Mail id  :  <INPUT TYPE="TEXT" name="m"></i></h3></center><br>
+          <center><h3><i>Enter Mobile: <input type="number" name="ph"></i></h3></center><br>
+            
+        <center><h3><i>Enter Password :  <INPUT TYPE="PASSWORD" name="p"></i></h3></center> <br>
+          <center><i> <h3>Confirm Password :  <INPUT TYPE="PASSWORD" name="cp"></h3></h3></center><br>
+                    <center><input type="submit"><input type="reset"></center>
+                    <center> <h3>Already have an account?<b></b><a href="login.html"><b></b>&nbsp  Login</a></h3></center>
+           
+</font>
+</pre>
+                    </form>
+                    <center><a href="dashboards.html"><font size="5" color="blue">Go to the Library</font></a></h4></center>
+                   
+                   <style>
+                   img{
+                      box-sizing: border-boX;
+                      width:149px;
+                      height: 149px;
+                      border-radius : 50%;
+                      margin:0;
+                      border:5px solid;
+                      padding: 3px;
+                      background-color: white;
+                      transition: all 1s;
+                     }
+                     </style>
+                  
+                    
+</body>
+</html>

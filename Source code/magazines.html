@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Magazines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" 
+rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+<div class="container">
+<div class="search">
+<h1>Magazines</h1>
+<input type="text" name="" id="find" placeholder="search here" onkeyup="search()">
+</div>
+<div class="product-list">
+<div class="product">
+<img src="https://fliphtml5.com/mobile/image/banner/digital_flipbook_maker2.png" width= 200 height=300>
+<h4>Fashion Look book</h4>
+<h4> <a href="https://online.fliphtml5.com/templates/swin/index.html">Read now</a></h4>
+<h3><input type="button" value="wishlist"></input></h3>
+<h4><h3><a href="https://online.fliphtml5.com/templates/swin/index.html"><input type="button" value="Download now"></a></h4>
+</div>
+    <div class="product">
+        <img src="https://fliphtml5.com/mobile/image/banner/digital_flipbook_maker3.png" width= 200 height=300>
+        <h4>Healthy Cook book</h4>
+        <h4> <a href="https://online.fliphtml5.com/templates/iwhv/index.html#p=1">Read now</a></h4>
+        <h3><input type="button" value="wishlist"></input></h3>
+        <h4><h3><a href="https://online.fliphtml5.com/templates/iwhv/index.html#p=1"><input type="button" value="Download now"></a></h4>
+        </div>
+        <div class="product">
+            <img src="https://archive.org/services/img/VogueMexcoCoverJuly1992" width=200 height=300>
+    <h4>Vogue</h4>
+    <h4> <a href="https://archive.org/details/VogueMexcoCoverJuly1992/Vogue%20Mexico%20Interview%20Angelique%20Rockas%202.jpg">Read now</a></h4>
+    <h3><input type="button" value="wishlist"></input></h3>
+    <h4><a href="https://online.fliphtml5.com/templates/swin/index.html"><input type="button" value="Download now"></a></h4>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- javascript -->
+<script type="text/javascript">
+    function search() {
+    let filter = document.getElementById('find').value.toUpperCase();
+    let item = document.querySelectorAll('.product');
+    let l = document.getElementsByTagName('h3');
+    for(var i = 0;i<=l.length;i++){
+    let a=item[i].getElementsByTagName('h4')[0];
+    let value=a.innerHTML || a.innerText || a.textContent;
+    if(value.toUpperCase().indexOf(filter) > -1) {
+    item[i].style.display="";
+    }
+    else
+    {
+    item[i].style.display="none";
+    }
+    }
+    }
+    </script>
+    
+    
+    
+    <style type="text/css">
+        *
+        {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        }
+        body
+        {
+        background: #ddd;
+        }
+        .container-fluid
+        {
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 80px 0px;
+        }
+        .container
+        {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        }
+        .container .search
+        {
+        display: flex;
+        padding: 30px 0px;
+        justify-content: space-between;
+        }
+        .container .search h1
+        {
+        letter-spacing: 3px;
+        display: inline-block;
+        border-bottom: 2px solid green;
+        padding-bottom: 10px;
+        }
+        .container .search input
+        {
+        width: 60%;
+        padding: 5px 16px;
+        background: transparent;
+        border: 1px solid #000;
+        font-size: 20px;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        outline: none;
+        }
+        .container .search input::placeholder
+        {
+        color: green;
+        font-weight: 500;
+        }
+        .container .product-list
+        {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+        }
+        .container .product-list .product
+        {
+        margin-top: 30px;
+        }
+        .container .product-list .product h3
+        {
+        padding-top: 5px;
+        letter-spacing: 2px;
+        font-size: 22px;
+        font-weight: 400;
+        }
+        .container .product-list .product h4
+        {
+        padding: 3px 0px;
+        color: #48a809;
+        font-weight: 700;
+        letter-spacing: 3px;
+        }
+        </style>
+        
+            </body>        
+    </html>
+    <!DOCTYPE html>
+    <!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Boxicons CSS -->
+        <link
+          href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+          rel="stylesheet"
+    />
+      </head>
+      <body>
+        <nav>
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <a href="#" class="link"></a>
+            <span class="logo-name">Turning Pages</span>
+          </div>
+          <div class="sidebar">
+            <div class="logo">
+                <a href="#" class="nav-link"></a>
+              <i class="bx bx-menu menu-icon"></i>
+              <span class="logo-name">Turning Pages</span>
+            </div>
+    
+            <div class="sidebar-content">
+              <ul class="lists">
+                <li class="list">
+                  <a href="dashboards.html" class="nav-link">
+                    <i class="bx bx-home-alt icon"></i>
+                    <span class="link">Library</span>
+                  </a>
+                </li>
+                <li class="list">
+                    <i href="profile.html" class="nav-link"></i>
+                      <i class="bx bx-group icon"></i>
+                      <span class="link">Profile</span>
+                    </a>
+                  </li>
+                <li class="list">
+                  <i href="#" class="nav-link"></i>
+                    <i class="bx bx-heart icon"></i>
+                    <span class="link">Wishlist</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                    <i class="bx bx-folder-open icon"></i>
+                    <span class="link">Downloads</span>
+                  </a>
+                </li>
+              </ul>
+    
+              <div class="bottom-cotent">
+                <li class="list">
+                  <a href="#" class="nav-link">
+                    <i class="bx bx-cog icon"></i>
+                    <span class="link">Settings</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="index.html" class="nav-link">
+                    <i class="bx bx-log-out icon"></i>
+                    <span class="link">Logout</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </nav>
+    
+        <section class="overlay"></section>
+    
+        <script>
+          const navBar = document.querySelector("nav"),
+            menuBtns = document.querySelectorAll(".menu-icon"),
+            overlay = document.querySelector(".overlay");
+    
+          menuBtns.forEach((menuBtn) => {
+            menuBtn.addEventListener("click", () => {
+              navBar.classList.toggle("open");
+            });
+          });
+    
+          overlay.addEventListener("click", () => {
+            navBar.classList.remove("open");
+          });
+        </script>
+        <br><br><br>
+        <center> <I>NO MAGAZINE FOUND</I></center>
+        <br><br>
+         <center><h4>Did not find what you are looking for?<br> Drop the name of the book here, we will fetch it for you!</h4></center>
+         <center><a href="mailto:19tr1a0567@scit.ac.in">Click here</a></center>
+      </body>
+    </html>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      min-height: 100%;
+      background: #e3f2fd;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 35px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+    nav .logo {
+      display: flex;
+      align-items: center;
+      margin: 0 24px;
+    }
+    .logo .menu-icon {
+      color: #333;
+      font-size: 24px;
+      margin-right: 14px;
+      cursor: pointer;
+    }
+    .logo .logo-name {
+      color: #333;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    nav .sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      width: 260px;
+      padding: 20px 0;
+      background-color: #fff;
+      box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+    }
+    nav.open .sidebar {
+      left: 0;
+    }
+    .sidebar .sidebar-content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px 16px;
+    }
+    .sidebar-content .list {
+      list-style: none;
+    }
+    .list .nav-link {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      padding: 14px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .lists .nav-link:hover {
+      background-color: #4070f4;
+    }
+    .nav-link .icon {
+      margin-right: 14px;
+      font-size: 20px;
+      color: #707070;
+    }
+    .nav-link .link {
+      font-size: 16px;
+      color: #707070;
+      font-weight: 400;
+    }
+    .lists .nav-link:hover .icon,
+    .lists .nav-link:hover .link {
+      color: #fff;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 1000vh;
+      width: 200%;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.4s ease;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    nav.open ~ .overlay {
+      opacity: 1;
+      left: 260px;
+      pointer-events: auto;
+    }
+    </style>
